@@ -23,7 +23,20 @@ To write a Python program that matches a string containing an `'a'` followed by 
 ### PROGRAM
 
 ```
+
+import re
+str = input()
+patterns = 'ab{2,3}?'
+
+if re.search(patterns, str):
+    print("Found a match!")
+else:
+    print("Not matched!")
+
+
 ```
 ### OUTPUT
+<img width="543" height="202" alt="image" src="https://github.com/user-attachments/assets/b9f00192-30f6-4067-ac77-f72f24ce44fd" />
 
 ### RESULT
+Thus the program matches a string containing an 'a' followed by two to three 'b' characters using regular expressions has been implemented and executed successfully.
